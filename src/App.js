@@ -1,6 +1,12 @@
 import React from 'react';
 import Header from './components/Header'
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 class App extends React.Component {
     state = {
@@ -53,6 +59,7 @@ class App extends React.Component {
     render() {
         const {value, toDoList} = this.state;
         return (
+            <Router>
             <div>
                 <Header title="To Do List" />
                 <form class="px-5 py-5 border border-1" onSubmit = {(e) => this.tambahToDo(e)}>
@@ -98,6 +105,7 @@ class App extends React.Component {
                     )
                 })}
             </div>
+            </Router>
         )
     }
 }

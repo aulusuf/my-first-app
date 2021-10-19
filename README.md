@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+Note:
+This project is for ALTA submission
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
